@@ -1,21 +1,19 @@
-digraph {
+digraph NFA {
     fake [style = invisible]
     q0 [root = true, shape = circle]
-    fake -> q0 [style = bold]
     q1 [shape = circle]
     q2 [shape = circle]
     q3 [shape = circle]
     q4 [shape = doublecircle]
-    q5 [shape = circle]
-    q0 -> q1 [label = "a"];
-    q0 -> q2 [label = "b"];
-    q1 -> q3 [label = "a"];
-    q1 -> q4 [label = "b"];
-    q2 -> q3 [label = "a"];
-    q2 -> q2 [label = "b"];
-    q3 -> q3 [label = "a"];
-    q3 -> q4 [label = "b"];
-    q4 -> q5 [label = "a"];
-    q4 -> q4 [label = "b"];
-    q5 -> q5 [label = "a,b"];
+
+    fake -> q0 [style = bold]
+    q0 -> q1 [label = "a"]
+    q0 -> q2 [label = "b"]
+    q1 -> q3 [label = "a"]
+    q1 -> q4 [label = "b"]
+    q2 -> q3 [label = "a"]
+    q2 -> q2 [label = "b"]
+    q3 -> q3 [label = "a"]
+    q3 -> q4 [label = "b"]
+    q4 -> q4 [label = "b"]
 }
